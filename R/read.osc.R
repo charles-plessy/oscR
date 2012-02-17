@@ -12,7 +12,10 @@ osctable <- read.table(file, header=TRUE, ...)
 #return(x)
 
 LocationToName <- function(osctable) {
-# Need to check that the columns are really there
+
+  if ( osc.namespace(osctable) != "genomic_coordinate")
+    stop("This OSC table dos not have genomic coordinates")
+  
   with(osctable,
     paste(chrom, ":", start.0base, "-", end, strand ,sep='')
   )
