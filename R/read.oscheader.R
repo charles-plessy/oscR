@@ -1,4 +1,4 @@
-scan.osc <- function (file, ...) {
+read.oscheader <- function (file, ...) {
 
 n <- 1
 oscheader <- '#'
