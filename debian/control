@@ -1,0 +1,18 @@
+Source: r-other-oscr
+Section: gnu-r
+Priority: optional
+#Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Maintainer: Charles Plessy <plessy@riken.jp>
+DM-Upload-Allowed: yes
+Uploaders: Charles Plessy <plessy@debian.org>
+Build-Depends: debhelper (>= 9), cdbs, r-base-dev (>= 2.14.2~20120222)
+Standards-Version: 3.9.3
+#Vcs-Browser: http://git.debian.org/?p=debian-med/package.git
+#Vcs-Git: git://git.debian.org/debian-med/package.git
+#Homepage: TBD
+
+Package: r-other-oscr
+Architecture: any
+Depends: ${R:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: OSC table support for R
+ Draft package.
