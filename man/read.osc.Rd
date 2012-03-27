@@ -2,20 +2,21 @@
 \alias{read.osc}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Read and return an OSC table.}
-\description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
-}
+\description{Reads an OSC table from a file and returns a data frame.}
 \usage{
-read.osc(...)
+read.osc(file, drop.id=FALSE, drop.norm=FALSE, ...)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
+  \item{file}{File name of the OSC table.}
+  \item{drop.id}{Drops the "id" column.}
+  \item{file}{Drops the normalised expression values (any column whose name contains "norm.".}
   \item{\dots}{
-%%     ~~Describe \code{\dots} here~~
+Other arguments are passed to read.table.
 }
 }
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+When IDs can be reconstituted from the OSC header and the feature coordinates,
+the data frame can be made lighter by dropping the "id" column with  drop.id=TRUE.
 }
 \value{
 %%  ~Describe the value returned

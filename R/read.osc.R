@@ -1,4 +1,4 @@
-read.osc <- function (file, ...) {
+read.osc <- function (file, drop.norm=FALSE, drop.id=FALSE, ...) {
 
 osctable <- read.table(file, header=TRUE, ...)
 
@@ -22,5 +22,9 @@ LocationToName <- function(osctable) {
 }
 
 rownames(osctable) <- LocationToName(osctable)
+
+if (drop.id)   osctable <- osctable[, -grep("^id$",    colnames(osc))]
+if (drop.norm) osctable <- osctable[, -grep("norm\\.", colnames(osc))]
+
 return(osctable)
 }
