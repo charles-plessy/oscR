@@ -14,8 +14,8 @@ LocationToName <- function(osctable) {
 
 rownames(osctable) <- LocationToName(osctable)
 
-if (drop.id)   osctable <- osctable[, -grep("^id$",    colnames(osc))]
-if (drop.norm) osctable <- osctable[, -grep("norm\\.", colnames(osc))]
+if (drop.id)   osctable <- osctable[, -grep("^id$",    colnames(osctable))]
+if (drop.norm) osctable <- osctable[, -grep("norm\\.", colnames(osctable))]
 
 return(osctable)
 }
