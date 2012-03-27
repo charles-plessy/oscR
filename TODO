@@ -1,0 +1,7 @@
+To Do
+=====
+
+read.osc
+--------
+
+The read.osc function should be able to drop norm values at load time.
