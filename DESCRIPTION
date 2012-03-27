@@ -1,6 +1,6 @@
-Package: anRpackage
+Package: oscR
 Type: Package
-Title: What the package does (short line)
+Title: Read, write and manipulate order-switchable column tables 
 Version: 1.0
 Date: 2011-11-02
 Author: Who wrote it
