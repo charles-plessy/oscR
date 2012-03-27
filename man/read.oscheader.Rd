@@ -1,9 +1,7 @@
 \name{read.oscheader}
 \alias{read.oscheader}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~function to do ... ~~
-}
+\title{Reads and returns an OSC header without reading the whole file.}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -33,7 +31,9 @@ read.oscheader(...)
 %%  ~~who you are~~
 }
 \note{
-%%  ~~further notes~~
+The head of the file is read again and again, with one more line each time,
+until the first character of the last line is not a comment character '#'
+anymore.  There must be a more efficient way.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
