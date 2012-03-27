@@ -4,4 +4,5 @@ To Do
 read.osc
 --------
 
-The read.osc function should be able to drop norm values at load time.
+ Optionally drop norm values at load time.
+ Optionally drop "id" column at load time, or give it a class of "character".
