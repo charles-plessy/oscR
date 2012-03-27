@@ -1,0 +1,17 @@
+##FileFormat = OSCtable-1.1
+##Date = 2009-06-02
+##ProtocolREF = CAGE-mapping-v1.0
+##ColumnVariable[start] = this is a start position of the genomic coordinate
+##ColumnVariable[end] = this is a stop position of the genomic coordinate
+##ColumnVariable[norm.THP10h] = this is TPM normalized value with 10h
+##ColumnVariable[entrez_gene_id] = Entrez gene ID, which is assigned to the cluster
+##ContactName = Contact Name
+##ContactEmail = example@example.com
+##InputFile = lane1.fa
+##InputFile = lane2.fa
+##ParameterValue[alignment_program] = nexAlign
+##ParameterValue[aligment_program_version] = 1.3.5
+##ParameterValue[UCSC_gene_tracks] = RefSeq
+##ParameterValue[UCSC_gene_tracks] = ENSEMBL transcript
+##NameSpace=genomic_coordinate
+##NameSpace=expression
