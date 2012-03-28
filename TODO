@@ -5,3 +5,4 @@ read.osc
 --------
 
  Optionally give "id" column a class of "character" at load time.
+ Re-order the factors by chromosome number (chr2 before chr10).
