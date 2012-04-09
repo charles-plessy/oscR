@@ -9,7 +9,7 @@ read.osc(file, drop.id=FALSE, drop.norm=FALSE, ...)
 \arguments{
   \item{file}{File name of the OSC table.}
   \item{drop.id}{Drops the "id" column.}
-  \item{file}{Drops the normalised expression values (any column whose name contains "norm.".}
+  \item{drop.norm}{Drops the normalised expression values (any column whose name contains "norm.".}
   \item{\dots}{
 Other arguments are passed to read.table.
 }
