@@ -1,6 +1,6 @@
 read.osc <- function (file, drop.id=FALSE, drop.norm=FALSE, ...) {
 
-osctable <- read.table(file, header=TRUE, ...)
+osctable <- read.table(file, header=TRUE, colClasses=('id'='character'), ...)
 
 rownames(osctable) <- ChromosomeCoordinates(osctable)
 
