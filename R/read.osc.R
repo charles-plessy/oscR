@@ -1,4 +1,4 @@
-read.osc <- function (file, drop.norm=FALSE, drop.id=FALSE, ...) {
+read.osc <- function (file, drop.id=FALSE, drop.norm=FALSE, ...) {
 
 osctable <- read.table(file, header=TRUE, ...)
 
