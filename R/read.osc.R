@@ -3,6 +3,7 @@ read.osc <- function (file, drop.id=FALSE, drop.norm=FALSE, ...) {
 osctable <- read.table(
 	file,
 	header		=	TRUE,
+	colClasses	=	c('id'='character'),
 	skip		=	length(read.oscheader(file)) -1,
 	comment.char	=	'',
 	...)
