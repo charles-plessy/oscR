@@ -1,4 +1,4 @@
-read.osc <- function (file, drop.id=FALSE, drop.norm=FALSE, ...) {
+read.osc <- function (file, drop.id=FALSE, drop.coord=FALSE, drop.norm=FALSE, ...) {
 
 osctable <- read.table(
 	file,
@@ -10,8 +10,9 @@ osctable <- read.table(
 
 rownames(osctable) <- ChromosomeCoordinates(osctable)
 
-if (drop.id)   osctable <- osctable[, -grep("^id$",    colnames(osctable))]
-if (drop.norm) osctable <- osctable[, -grep("norm\\.", colnames(osctable))]
+if (drop.id)    osctable <- osctable[, -grep("^id$",    colnames(osctable))]
+if (drop.coord) osctable <- osctable[, c(grep("raw\\.", colnames(osctable)), grep("norm\\.", colnames(osctable)))]
+if (drop.norm)  osctable <- osctable[, -grep("norm\\.", colnames(osctable))]
 
 return(osctable)
 }
