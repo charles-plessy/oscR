@@ -4,6 +4,29 @@ oscR -- Read, write and manipulate order-switchable column tables
 Installation on Linux computers
 -------------------------------
 
+### From GitHub (recommended)
+
+```
+devtools::install_github('oscR','charles-plessy')
+```
+
+
+### From a Git clone.
+
+```
+git clone https://github.com/charles-plessy/oscR.git
+R CMD INSTALL oscR
+```
+
+In case of error `no permission to install to directory
+‘/usr/local/lib/R/site-library’`, create a local R directory with the following
+command.
+
+```
+/usr/bin/Rscript -e 'dir.create(Sys.getenv("R_LIBS_USER"), recursive=TRUE)'
+````
+
+
 ### From source archive.
 
  * Downolad a release from <https://github.com/charles-plessy/oscR/releases>.
@@ -20,20 +43,6 @@ wget https://github.com/charles-plessy/oscR/archive/0.1.1.tar.gz
 R CMD INSTALL 0.1.1.tar.gz
 ```
 
-### From a Git clone.
-
-```
-git clone https://github.com/charles-plessy/oscR.git
-R CMD INSTALL oscR
-```
-
-In case of error `no permission to install to directory
-‘/usr/local/lib/R/site-library’`, create a local R directory with the following
-command.
-
-```
-/usr/bin/Rscript -e 'dir.create(Sys.getenv("R_LIBS_USER"), recursive=TRUE)'
-````
 
 ### As a Debian package.
 
