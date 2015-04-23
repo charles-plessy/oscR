@@ -1,4 +1,4 @@
-read.oscheader <- function (file, ...) {
+read.oscheader <- function (file) {
 
 # Inspect the metadata
 #filehandle <- file(file)
