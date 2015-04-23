@@ -14,8 +14,10 @@ if (drop.norm)
 coords <- c("chrom", "start.0base", "end", "strand")
 idCoords <- c("id", coords)
 
-if (dropIdCoords)
+if (dropIdCoords) {
   osctable <- osctable[, setdiff(colnames(osctable), idCoords), with=FALSE] 
+  replaceIdCoords <- FALSE
+}
 
 if (replaceIdCoords) {
   osctable$id <- ChromosomeCoordinates(osctable[, idCoords, with=FALSE])
