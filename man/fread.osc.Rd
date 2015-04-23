@@ -14,29 +14,29 @@ fread.osc(file, dropIdCoords=FALSE, replaceIdCoords=TRUE, drop.norm=TRUE)
 }
 
 \arguments{
-  \item{file}{File name of the OSC table.  If its name finishes with sQuote(gz), it
-    will be uncompressed with the sQuote(zcat) command.}
+  \item{file}{File name of the OSC table.  If its name finishes with \sQuote{gz}, it
+    will be uncompressed with the \sQuote{zcat} command.}
   \item{dropIdCoords}{
-    Drops the sQuote(id), sQuote(chrom), sQuote(start.0base), sQuote(end) and
-    sQuote(strand) columns.} 
+    Drops the \sQuote{id}, sQuote{chrom}, sQuote{start.0base}, sQuote{end} and
+    \sQuote{strand} columns.} 
   \item{replaceIdCoords}{
-    Replaces the contents of the sQuote(id) column with a browser-friendly genomic
-    coordinate, and drops the sQuote(chrom), sQuote(start.0base), sQuote(end) and
-    sQuote(strand) columns.}
+    Replaces the contents of the \sQuote{id} column with a browser-friendly genomic
+    coordinate, and drops the \sQuote{chrom}, sQuote{start.0base}, sQuote{end} and
+    \sQuote{strand} columns.}
   \item{drop.norm}{
     Drops the normalised expression values (any column whose name contains
-    dQuote(norm.).}
+    \sQuote{norm.}.}
 }
 
 \details{
 When IDs can be reconstituted from the OSC header and the feature coordinates,
-the data table can be made lighter by dropping the "id" column with the dQuote(replaceIdCoords)
+the data table can be made lighter by dropping the "id" column with the \sQuote{replaceIdCoords}
 option.
 }
 
 \value{
-Returns a data table.  With OSCTables output by the dQuote(level1) program, the combiation
-of dQuote(drop.norm) and dQuote(dropIdCoords) will produce a data table that only contains
+Returns a data table.  With OSCTables output by the \sQuote{level1} program, the combiation
+of \sQuote{drop.norm} and sQuote{dropIdCoords} will produce a data table that only contains
 numeric values.
 }
 
