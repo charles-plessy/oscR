@@ -18,15 +18,18 @@ ChromosomeCoordinates(osctable, system = "phosphate")
 
 \section{Notes about chromosomal coordinates}{
 
-\section{Phosphate-based (‘0-based’)}{
+\section{Phosphate-based (\sQuote(0-based))}{
 
-Popular format including [http://genome.ucsc.edu/FAQ/FAQformat.html#format1 BED] are said to be ‘zero-based’ and open, numbering the first base of a chromosome as zero and not including the end position of the coordinates in the feature.
+Popular format including [http://genome.ucsc.edu/FAQ/FAQformat.html#format1
+BED] are said to be sQuote(zero-based) and open, numbering the first base of a
+chromosome as zero and not including the end position of the coordinates in the
+feature.
 
 A biological interpretation is that they number the phosphates.
 
 \samp{
   0                  1                  2                  3
-Base - phosphate - Base - phosphate - Base - phosphate - Base - phosphate …
+Base - phosphate - Base - phosphate - Base - phosphate - Base - phosphate ...
           1                   2                  3                  4
 }
 
@@ -34,13 +37,13 @@ In the above example, the coordinate 1-2 indicates base 1.
 
 }
 
-\section{Nucleotide-based (‘1-based’)}{
+\section{Nucleotide-based (sQuote(1-based))}{
 
 Other popular formats, in particular [http://www.sequenceontology.org/gff3.shtml GFF], are said to be 1-based and inclusice, numbering the first base of a chromomsome as 1 and including the end position of the coordinates in the feature.
 
 \samp{
   1                  2                  3                  4
-Base - phosphate - Base - phosphate - Base - phosphate - Base - phosphate …
+Base - phosphate - Base - phosphate - Base - phosphate - Base - phosphate ...
 }
 
 In the above example, the coordinate 1-2 indicates bases 1 and 2.
@@ -49,7 +52,7 @@ In the above example, the coordinate 1-2 indicates bases 1 and 2.
 
 \samp{
   1                  2                  3                  4
-Base - phosphate - Base - phosphate - Base - phosphate - Base - phosphate …
+Base - phosphate - Base - phosphate - Base - phosphate - Base - phosphate ...
           1                   2                  3                  4
 }
 
