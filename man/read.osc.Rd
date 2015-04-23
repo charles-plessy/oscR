@@ -3,7 +3,7 @@
 \title{Read and return an OSC table.}
 \description{Reads an OSC table from a file and returns a data frame.}
 \usage{
-read.osc(file, drop.id=FALSE, drop.norm=FALSE, ...)
+read.osc(file, drop.id=FALSE, drop.coord=FALSE, drop.norm=FALSE, ...)
 }
 \arguments{
   \item{file}{File name of the OSC table.}
