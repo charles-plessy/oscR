@@ -4,7 +4,7 @@ oscR -- Read, write and manipulate order-switchable column tables
 Installation on Linux computers
 -------------------------------
 
-### From GitHub (recommended)
+### From GitHub with R (recommended)
 
 ```
 devtools::install_github('oscR','charles-plessy')
