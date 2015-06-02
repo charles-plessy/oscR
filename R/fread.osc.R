@@ -11,7 +11,7 @@ osctable <- fread( file
 if (drop.norm)
   osctable <- osctable[, -grep("norm\\.", colnames(osctable)), with=FALSE]
 
-coords <- c("chrom", "start.0base", "end", "strand")
+coords <- c("chrom", "start.0base", "end", "strand", "pos")
 idCoords <- c("id", coords)
 
 if (dropIdCoords) {
