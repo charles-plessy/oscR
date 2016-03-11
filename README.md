@@ -7,7 +7,7 @@ Installation on Linux computers
 ### From GitHub with `R` (recommended)
 
 ```
-devtools::install_github('charles-plessy/oscR')
+devtools::install_github('charles-plessy/oscR', upgrade_dependencies = FALSE)
 ```
 
 
