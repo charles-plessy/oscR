@@ -3,7 +3,7 @@ fread.osc <- function (file, dropIdCoords=FALSE, replaceIdCoords=TRUE, drop.norm
 oscHeaderLength <- length(read.oscheader(file)) -1
 
 if (grepl('.gz$', file))
-  file <- paste('zcat', file)
+  file <- paste('zcat <', file)
 
 osctable <- fread( file
                  , skip = oscHeaderLength )
