@@ -1,8 +1,8 @@
 Package: oscR
 Type: Package
 Title: Read, write and manipulate order-switchable column tables 
-Version: 0.2.1
-Date: 2016-06-07
+Version: 0.2.2
+Date: 2018-04-02
 Author: Charles Plessy <plessy@riken.jp>
 Maintainer: Charles Plessy <plessy@riken.jp>
 Description: Functions to work with Order Switchable Column Tables (OSCT).
