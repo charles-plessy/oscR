@@ -9,3 +9,5 @@ Description: Functions to work with Order Switchable Column Tables (OSCT).
  See: http://sourceforge.net/projects/osctf
 License: CC0
 Imports: data.table
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
