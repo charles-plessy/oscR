@@ -8,8 +8,10 @@ if (grepl('.gz$', file))
 osctable <- fread( file
                  , skip = oscHeaderLength )
 
-if (drop.norm)
-  osctable <- osctable[, -grep("norm\\.", colnames(osctable)), with=FALSE]
+if (drop.norm) {
+  keep <- !grepl("norm\\.", colnames(osctable))
+  osctable <- osctable[, keep, with=FALSE]
+}
 
 coords <- c("chrom", "start.0base", "end", "strand", "pos")
 idCoords <- c("id", coords)
