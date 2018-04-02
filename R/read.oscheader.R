@@ -16,6 +16,8 @@
 #' anymore.  There must be a more efficient way.
 #' 
 #' @seealso [`read.osc`], [`fread.osc`]
+#' 
+#' @export
 
 read.oscheader <- function (file) {
 

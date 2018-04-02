@@ -28,6 +28,9 @@
 #' @author Charles Plessy
 #' 
 #' @seealso [`data.table`], [`read.osc`]
+#' 
+#' @importFrom data.table fread
+#' @export
 
 fread.osc <- function (file, dropIdCoords=FALSE, replaceIdCoords=TRUE, drop.norm=TRUE) {
 

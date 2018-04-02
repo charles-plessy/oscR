@@ -16,6 +16,8 @@
 #' with `drop.id = TRUE`.
 #' 
 #' @author Charles Plessy
+#' 
+#' @export
 
 read.osc <- function ( file
                      , drop.id     = FALSE

@@ -57,6 +57,8 @@
 #' @author Charles Plessy
 #' 
 #' @seealso [`read.osc`]
+#' 
+#' @export
 
 ChromosomeCoordinates <- function(osctable, system="phosphate") {
 
